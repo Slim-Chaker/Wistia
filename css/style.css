@@ -1,0 +1,988 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+/*Header*/
+header{
+    position: sticky;
+    top: 0;
+}
+.header{
+    background-color: #c896a5;
+    display: flex;
+    padding: 0 15px 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+}
+.header:hover{
+    background-color:white; 
+}
+.header:hover .menu-item-title{
+    color:black;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+.espacement-header{
+    width: 600px;
+}
+.header-flag{
+    width: 35px;
+}
+.wistia-marketing-logo{
+    width: 140px;
+}
+.menu-item-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-item-title{
+    text-decoration: none;
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+    padding: 5px;
+}
+.menu-titles{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+
+}
+#drop-marketing{
+    position: absolute;
+    background: white;
+    list-style-type: none;
+    display: none;
+    overflow: hidden;
+    width: 1239px;
+    left: -10px;
+    padding: 50px 30px 50px 90px;
+    z-index: 99;
+}
+.drop:hover #drop-marketing{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    border-top: 1px solid rgba(128, 128, 128, 0.445);
+    top: 55px;
+}
+
+.introd-marketing{
+    width: 200px;
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+     color: rgb(91, 107, 127);
+}
+
+.features {
+    list-style-type: none;
+}
+.features-a{
+    padding-bottom: 5px;
+
+}
+.features-a a{
+    text-decoration: none; 
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(42, 45, 53);
+}
+.features-a a:hover{
+    color: #3ea9f5;
+}
+.titres{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13.2px;
+    color: rgb(91, 107, 127); 
+    padding-bottom: 5px
+}
+
+.menu-service-customize{
+    list-style-type: none;
+}
+.menu-service-convert{
+    list-style-type: none;
+}
+.menu-service-analyse{
+    list-style-type: none;
+}
+.menu-service-customize-a{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(42, 45, 53);
+    padding-bottom: 5px;
+}
+.menu-service-customize-a a{
+    text-decoration: none;
+    color: rgb(42, 45, 53);
+}
+.menu-service-customize-a a:hover{
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.menu-service-convert-a{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(42, 45, 53);
+    padding-bottom: 5px;
+}
+.menu-service-convert-a{
+    text-decoration: none;
+    color: rgb(42, 45, 53);
+}
+.menu-service-convert-a:hover{
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.menu-service-analyse-a{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(42, 45, 53);
+    padding-bottom: 5px;
+}
+.menu-service-analyse-a{
+    text-decoration: none;
+    color: rgb(42, 45, 53);
+}
+.menu-service-analyse-a:hover{
+    font-size: 14px;
+    font-weight: 550;
+}
+.btn-create-account-header-trns{
+    transition: transform 0.5s;
+}
+.btn-create-account-header-trns:hover{
+    transform: translateY(-1px);
+   cursor: pointer;
+}
+.btn-create-account-header{
+    background-color: #0691f2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Walsheim',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: white;
+    margin-left: 100px;
+}
+.btn-create-account-header:hover{
+    box-shadow: 0px 4px 0px 0px #0569af;
+}
+/*Arrow*/
+.down {
+    border: solid #f0f0f0;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    }
+.down:hover {
+    transform: rotate(225deg);
+    color: rgb(156, 168, 183);
+}
+
+
+.btn-header{
+    display: flex;
+    justify-content: space-between;
+}
+/*header soapbox*/
+#drop-soapbox{
+    position: absolute;
+    background: white;
+    list-style-type: none;
+    display: none;
+    overflow: hidden;
+    width: 1239px;
+    left: -10px;
+    padding: 50px 30px 50px 90px;
+    z-index: 99;
+}
+.drop-soapbox-class:hover #drop-soapbox{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    border-top: 1px solid rgba(128, 128, 128, 0.445);
+    top: 55px;
+}
+.introd-soapbox{
+    width: 200px;
+}
+.soapbox-text{
+    font-family: 'Walsheim',sans-serif;
+    color: rgba(180, 183, 189, 0.58);
+    display: flex;
+    margin: 0;
+}
+
+.circle-sb-header {
+    height: 25px;
+    width: 25px;
+    background-color: #FFAB9D;
+    border-radius: 50%;
+    margin: 5px 0px 0 0;
+  }
+.square-sb-header {
+    height: 25px;
+    width: 25px;
+    background-color: #FFDA97;
+    margin: 5px 0px 0 0;
+  }
+.triangle-up-sb-header {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+    border-bottom: 25px solid #B7E7EE;
+    margin-right: 10px;
+    margin: 5px 0px 0 0;
+}
+.features-soapbox {
+    list-style-type: none;
+}
+.features-soapbox-a{
+    padding-bottom: 5px;
+
+}
+.features-soapbox-a a{
+    text-decoration: none; 
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(42, 45, 53);
+}
+.features-soapbox-a a:hover{
+    color: #3ea9f5;
+}
+.menu-soapbox-paidplan{
+    list-style-type: none;
+}
+.menu-soapbox-paidplan-a{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(42, 45, 53);
+    padding-bottom: 5px;
+}
+.menu-soapbox-paidplan-a a{
+    text-decoration: none;
+    color: rgb(42, 45, 53);
+}
+.menu-soapbox-paidplan-a a:hover{
+    font-size: 14px;
+    font-weight: 550;
+}
+.menu-item-arrow-soapbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-item-title-soapbox{
+    text-decoration: none;
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+    padding: 5px;
+}
+.down-soapbox {
+    border: solid #f0f0f0;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    }
+.down-soapbox:hover {
+    transform: rotate(225deg);
+    color: rgb(156, 168, 183);
+}
+.btn-soapbox-header-trns{
+    transition: transform 0.5s;
+}
+.btn-soapbox-header-trns:hover{
+    transform: translateY(-1px);
+   cursor: pointer;
+}
+.btn-soapbox-header{
+    background-color:rgb(254, 152, 134);
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-family: 'Walsheim',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: white;
+    margin-left: 500px;
+}
+.btn-soapbox-header:hover{
+    box-shadow: 0px 4px 0px 0px rgb(245, 132, 112);
+}
+
+.circle-header {
+    height: 10px;
+    width: 10px;
+    background-color: #FFAB9D;
+    border-radius: 50%;
+  }
+.square-header {
+    height: 10px;
+    width: 10px;
+    background-color: #FFDA97;
+  }
+.triangle-up-header {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 10px solid #B7E7EE;
+}
+/*Video series*/
+.menu-item-arrow-vid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+ }
+ 
+ 
+ #drop-videos{
+    position: absolute;
+    background: white;
+    list-style-type: none;
+    display: none;
+    width: 1239px;
+    left: -560px;
+    top:52px;
+    padding: 50px 30px 50px 90px;
+    border-top:0.5px solid rgba(128, 128, 128, 0.445);
+    overflow: hidden;
+    z-index: 99;
+ 
+ }
+ .drop:hover #drop-videos{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+ }
+ 
+ 
+ .introd-videos{
+    width: 400px;
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+     color: rgb(91, 107, 127);
+     margin-right: 80px;
+ }
+ 
+ .Video-Series{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.6px;
+    color: rgb(28, 85, 197);
+ }
+ 
+ .videos-serv{
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    height: 195px;
+    margin: 0px 20px;
+ border-radius: 5px;
+  border:0.5px solid rgba(128, 128, 128, 0.445);
+ }
+ 
+ .vid-serv{
+    padding: 20px 40px;
+    width: 400px;
+    font-family: 'Walsheim',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+     color: rgb(91, 107, 127);
+ 
+ }
+
+/*learning center*/
+
+.menu-item-arrow-lear{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+
+#drop-learning-center{
+   position: absolute;
+   background: white;
+   list-style-type: none;
+   display: none;
+   overflow: hidden;
+   width: 1239px;
+   left: -10px;
+   padding: 50px 30px 50px 90px;
+   top: 55px;
+   border-top: 0.5px solid rgba(128, 128, 128, 0.445);
+   z-index: 99;
+}
+.drop:hover #drop-learning-center{
+   display: flex;
+   position: absolute;
+   justify-content: space-between;
+}
+
+.introd-learning-center{
+   width: 240px;
+   font-family: 'Walsheim',sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 21px;
+    color: rgb(91, 107, 127);
+}
+.introd-learning-center h3{
+   font-family: Walsheim;
+   font-size: 25px;
+   font-weight: 700;
+   line-height: 27.6px;
+   color: #3AB16A;
+   margin-top: 0px;
+}
+
+.blog {
+   list-style-type: none;
+}
+.blog-a{
+   padding-bottom: 5px;
+
+}
+.blog-a a{
+   text-decoration: none;
+   font-family: 'Walsheim',sans-serif;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 18px;
+   color: rgb(42, 45, 53);
+}
+.blog-a a:hover{
+   color: #3ea9f5;
+}
+.menu-service-blog-categories{
+list-style-type: none;
+}
+.menu-service-support-categories{
+list-style-type: none;
+}
+
+
+.menu-service-blog-categories-a{
+   font-family: 'Walsheim',sans-serif;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 18px;
+   color: rgb(42, 45, 53);
+   padding-bottom: 5px;
+}
+.menu-service-blog-categories-a a{
+   text-decoration: none;
+   color: rgb(42, 45, 53);
+}
+.menu-service-blog-categories-a a:hover{
+   font-size: 14px;
+   font-weight: 550;
+}
+
+.menu-service-support-categories-a{
+   font-family: 'Walsheim',sans-serif;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 18px;
+   color: rgb(42, 45, 53);
+   padding-bottom: 5px;
+}
+.menu-service-support-categories-a{
+   text-decoration: none;
+   color: rgb(42, 45, 53);
+}
+.menu-service-support-categories-a:hover{
+   font-size: 14px;
+   font-weight: 550;
+}
+
+.btn-subscribe-header-trns{
+   transition: transform 0.5s;
+}
+.btn-subsribe-header-trns:hover{
+   transform: translateY(-1px);
+  cursor: pointer;
+}
+.btn-subscribe-header{
+   background-color: #3AB16A;
+   padding: 10px 20px;
+   border-radius: 5px;
+   font-family: 'Walsheim',sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 19.2px;
+   color: white;
+   margin-left: 300px;
+
+}
+.btn-subscribe-header:hover{
+   box-shadow: 0px 4px 0px 0px #0569af;
+}
+
+
+/*Boutton header*/
+/*btn1*/
+.get-soapbox-header{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 12px;
+    background-color: white;
+    border: 1px solid #cecbcb;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.get-soapbox-header:hover{
+    box-shadow: 0px 4px 0px 0px #c3b9b9;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.btn-get-soapbox{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    color: rgb(54, 57, 69);
+    padding-left: 8px;
+}
+/*btn2*/
+
+.my-account-header{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 12px;
+    background-color: #3EA9F5;
+    border-radius: 5px;
+}
+.my-account-header:hover{
+    box-shadow: 0px 4px 0px 0px #0569af;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.btn-my-account{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    color: white;
+    padding-left: 8px;
+}
+
+/*End Header*/
+
+
+/*Section1*/
+#wistia-presentation{
+    background-color: #c896a5;
+}
+.pres-container{
+    display: flex;
+    padding: 65px 83px 0 93px;
+}
+.watch-video{
+    height: 320px;
+}
+.titre-pres{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 41.6px;
+    font-weight: 400;
+    line-height: 49.92px;
+    color: rgb(54, 57, 69);
+    padding: 0 0 30px;
+}
+.btn-watch-v{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(54, 57, 69);
+    background-color: white;
+    border-radius: 5px;
+    padding: 23px 50px;
+ 
+ }
+ .btn-watch-v-class{
+    transition: transform 1s;
+ }
+ .btn-watch-v-class:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+ }
+ .btn-watch-v:hover{
+    box-shadow: 0px 4px 0px 0px #ccc;
+ }
+.video{
+    z-index: 0;
+}
+
+/*Section2*/
+#wistia-description{
+    height: 417px;
+}
+.description-items{
+    display: flex;
+    height: 100%;
+}
+.wistia-desc-item{
+    padding: 45px 58px 0;
+}
+.hosting{
+    background-color: rgb(254, 210, 74); 
+}
+.soapbox{
+    background-color: rgb(81, 194, 159);
+}
+.skills{
+    background-color: rgb(62, 169, 245);
+}
+.wistia-desc-item>h2{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+}
+.wistia-desc-item>p{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color:rgb(42, 45, 53);
+    padding-bottom: 24px;
+}
+.wistia-desc-item a{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color:rgb(54, 57, 69);
+}
+.btn-desc{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: rgb(54, 57, 69);
+    border-radius: 5px;
+    padding: 20px 40px;
+    border: 1px solid rgba(255, 255, 255,0.55)
+}
+.icon-hosting{
+    font-size: 50px;
+    color: rgb(62, 169, 245);
+}
+.icon-soapbox{
+    font-size: 50px;
+    color: rgb(231, 184, 199);
+}
+.icon-skills{
+    font-size: 50px;
+    color: #fed24a;
+}
+
+.wistia-logos{
+    display: flex;
+    padding: 60px 35px;
+}
+.wistia-business{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.4px;
+    color: rgb(156, 168, 183) ;
+    padding: 80px 23px ;
+    width: 207px;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+}
+.img1{
+    width: 170px;
+    height:107px ;
+    padding: 67px 24px;
+
+}
+.img2{
+    width: 170px;
+    height:91px ;
+    padding: 62px 22px;
+}
+
+/*section4*/
+
+#section4{
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-bottom:60px ;
+}
+
+.sec4-main{
+    display: flex;
+    justify-content: space-between;
+}
+.sec4-items{
+width:382px ;
+height:370px ;
+padding: 30px 20px;
+font-family: 'Walsheim',sans-serif;
+}
+
+.image-award{  
+    background: rgba(62, 169, 245, 0.8000);
+	transition: .3s ease-in-out;
+}
+.image-award img{
+    width:100% ;
+}
+.image-award:hover img{
+    cursor: pointer;
+    opacity: .3;        
+}
+
+.image-channels{  
+    background: rgba(81, 194, 159, 0.8000);
+	transition: .3s ease-in-out;
+}
+.image-channels img{
+    width:100% ;
+}
+.image-channels:hover img{
+    cursor: pointer;
+    opacity: .3;        
+}
+
+.image-road{  
+    background: rgba(206, 160, 175, 0.8000);
+	transition: .3s ease-in-out;
+}
+.image-road img{
+    width:100% ;
+}
+.image-road:hover img{
+    cursor: pointer;
+    opacity: .3;        
+}
+
+.sec4-items h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: rgb(42, 45, 53);
+}
+.sec4-items p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(42, 45, 53,0.8);  
+}
+.sec4-items a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: rgb(55, 105, 204);
+    
+}
+
+/*section5*/
+#terms-services-wistia{
+    margin-top: 60px;
+}
+.terms-service{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color:rgb(54, 57, 69) ;
+    width: 100%;
+    height: 70px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.terms-service a{
+    color: #5B6B7F;
+}
+
+
+
+/*Footer*/
+footer{
+    height: 445px;
+    background-color: #2A2D35;
+}
+.footer-wistia{
+    display: flex;
+    padding: 0 20px;
+}
+.footer-description{
+    padding: 60px 120px 90px 60px;
+}
+.footer-description>h1{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+    color: rgb(255, 255, 255);
+    width: 280px;
+}
+.follow-us{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    width: 280px;
+}
+.follow-us a{
+    color: #56BE8E;
+    text-decoration: none;
+}
+.follow-us a:hover{
+    text-decoration: underline;
+    color: #3AB16A;
+}
+.hr-footer{
+    border: none;
+    border-left: 1px solid #B2B9C1;
+    height: 200px;
+    margin: 65px 0;
+    opacity: .1;
+    width: 1px;
+}
+.footer-nav-items{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 40px;
+    width: 100%;
+}
+.footer-nav-items h3{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 14.3px;
+    color: rgb(156, 168, 183);
+}
+.nav-item{
+    width: 190px;
+}
+.div-with-image{
+    padding-top: 10px;
+}
+.wistia-flag{
+    width: 25px;
+}
+.icon-footer{
+    display: flex;
+}
+.circle {
+    height: 20px;
+    width: 20px;
+    background-color: #FFAB9D;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+.square {
+    height: 20px;
+    width: 20px;
+    background-color: #FFDA97;
+    margin-right: 10px;
+  }
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+    border-bottom: 20px solid #B7E7EE;
+    margin-right: 10px;
+}
+.items-footer{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+.nav-item-f{
+    font-family: 'Walsheim',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #F9F9F9;
+    cursor: pointer;
+}
+.create-account{
+    color: #3EA9F5;
+}
+.create-account:hover{
+    text-decoration: underline;
+}
+.install-free{
+    color: #FD9786;
+}
+.install-free:hover{
+    text-decoration: underline;
+}
+.copyright{
+    text-align: center;
+    font-family: 'Walsheim',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: rgb(178, 185, 193);
+}
+.terms-privacy-links{
+    color: rgb(178, 185, 193);
+}
+.terms-privacy-links:hover{
+    color: #56BE8E;
+}
+
+
+
+
